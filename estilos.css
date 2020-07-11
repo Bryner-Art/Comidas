@@ -1,0 +1,100 @@
+*{
+	padding: 0px;
+    box-sizing: border-box;
+}
+body{
+	background-image: url(fondo.jpg);
+	background-size: 100%;
+}
+.comida1{
+	background-color: black;
+	color: white;
+	height: 600px;
+	width: 300px;
+	text-align: center;
+}
+.titulos{
+  background-position: center;
+  box-sizing: content-box;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 0px #a9a9a9, 2px 2px 0px #a2a2a2, 3px 3px 0px #b5b5b5, 4px 4px 0px black,5px 5px 0px black,10px 10px 3px black;
+}
+.oreo{
+	width: 200px;
+	height: 200px;
+}
+
+#cara,#cara2,#cara3,#cara4 {
+  width: 320px;
+  height: 260px;
+  margin:0 auto;
+  display: inline-block;
+}
+#trans,#trans2,#trans3,#trans4 {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  -webkit-transition: transform 500ms ease-in-out;
+    -moz-transition: transform 500ms ease-in-out;
+      -o-transition: transform 500ms ease-in-out;
+        transition: transform 500ms ease-in-out;
+}	
+#cara:hover #trans,#cara2:hover #trans2,#cara3:hover #trans3,#cara4:hover #trans4 {
+  -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+      ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+figure.back,
+figure.back2,
+figure.back3,
+figure.back4 {
+  -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+      ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+@media (min-width: 700px) and (max-width:1310px){
+	.comida1{
+	height: 910px;
+	width: 500px;
+	font-size: 25px;
+	}
+	.titulos{
+		font-size: 75px;
+	}
+#cara,#cara2,#cara3,#cara4{
+	display: list-item;
+	margin-bottom: 800px;
+	margin-left: 250px;
+	height: 200px;
+	}
+}
+@media (max-width:699px){
+  .titulos{
+  	font-size: 100px;
+  }
+  .comida1{
+  	font-size: 30px;
+  	height: 1300px;
+  	width: 800px;
+  }
+}
