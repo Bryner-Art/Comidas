@@ -1,5 +1,6 @@
 *{
 	padding: 0px;
+	margin: 0px;
     box-sizing: border-box;
 }
 body{
@@ -75,8 +76,8 @@ figure.back4 {
 @media (min-width: 700px) and (max-width:1310px){
 	.comida1{
 	height: 2000px;
-	width: 500px;
-	font-size: 40px;
+	width: 80%;
+	font-size: 50px;
 	}
 	.titulos{
 		font-size: 75px;
@@ -84,22 +85,12 @@ figure.back4 {
 #cara,#cara2,#cara3,#cara4{
 	display: list-item;
 	margin-bottom: 800px;
-	margin-left: 250px;
+	margin-left: 130px;
 	height: 1300px;
+	width: 100%;
 	}
 	.oreo{
 		height: 400px;
 		width: 80%;
 	}
-}
-
-@media (max-width:699px){
-  .titulos{
-  	font-size: 100px;
-  }
-  .comida1{
-  	font-size: 40px;
-  	height: 1300px;
-  	width: 90%;
-  }
 }
