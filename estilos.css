@@ -10,8 +10,8 @@ body{
 .comida1{
 	background-color: black;
 	color: white;
-	height: 600px;
-	width: 300px;
+	height: 650px;
+	width: 250px;
 	text-align: center;
 }
 .titulos{
@@ -28,12 +28,13 @@ body{
   10px 10px 3px black;
 }
 .oreo{
-	width: 200px;
+	width: 80%;
 	height: 200px;
+  border-radius: 0%;
 }
 #cara,#cara2,#cara3,#cara4 {
-  width: 320px;
-  height: 260px;
+  width: 250px;
+  height: 350px;
   margin:0 auto;
 }
 #trans,#trans2,#trans3,#trans4 {
@@ -74,36 +75,90 @@ figure.back,figure.back2,figure.back3,figure.back4 {
       box-sizing: border-box;
 }
 
-@media (min-width:992px){
+
+@media (min-width:1065px){
 #cara,#cara2,#cara3,#cara4{
     display: inline-block ;
-  }
-
-.oreo{
-  width: 300px;
-  height: 300px;
-  border-radius: 10%
-}
-
-}
-@media (min-width:768px) and (max-width:1111px){
-  #cara,#cara2{
-    display: inline-flex ;
-    margin-bottom: 400px;
-  }
-#cara3,#cara4{
-    display: inline-block;
-  }  
+   margin-left: 10px;
+margin-top: 50px;
+ }
+.comida1{
+  background-color: black;
+  color: white;
+  height: 650px;
+  width: 250px;
+  text-align: center;
 }
 .oreo{
-  width: 200px;
+  width: 80%;
   height: 200px;
-  border-radius: 100%;
-  margin-top: 50px;
+  border-radius: 0%
 }
-@media (max-width:767px){
+.caja1, .caja2{
+ display: inline-flex;
+}
+}
+@media (min-width:600px) and (max-width:1064px){
+  #cara,#cara2,#cara3,#cara4{
+   margin-left: 70px;
+margin-top: 50px;
+width: 300px;
+  height: 550px;
+  }
+  .comida1{
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.oreo{
+  width: 80%;
+  height: 200px;
+  border-radius: 30%;
+
+}
+.caja1, .caja2{
+ display: inline-block;
+}
+}
+@media (max-width:760px){
 #cara,#cara2,#cara3,#cara4{
     display: list-item center;
-    margin-bottom: 400px;
+   width: 400px;
+  height: 550px;
   }
+  .comida1{
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+  .oreo{
+  width: 80%;
+  height: 200px;
+  border-radius: 100%;
+}
+}
+@media (max-width:600px){
+#cara,#cara2,#cara3,#cara4{
+    display: list-item center;
+   width: 400px;
+  height: 550px;
+  margin-bottom: 50px;
+  }
+  .comida1{
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+  .oreo{
+  width: 80%;
+  height: 200px;
+  border-radius: 100%;
+}
 }
